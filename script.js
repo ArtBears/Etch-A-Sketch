@@ -2,7 +2,6 @@ $(document).ready(function() {
     var $wrapper = $("#wrapper");
     var $table = $("#table");
     var $box = $(".blue");
-    
 
     //function takes a
     var createTable = function(counter, table) {
@@ -12,12 +11,17 @@ $(document).ready(function() {
         
         //"<tr><td><div class=blue></div></td></tr>"
         var html_string = "";
-
+        var grid_height = ($wrapper.height()/counter)-2;
+        var grid_width = ($wrapper.width()/counter)-2;
         
         for(var i = counter; i > 0; i--){
             html_string += "<tr>";
             for(var j = counter; j > 0; j--){
-                html_string +=                                   "<td><div class=blue></div></td>";
+               html_string += "<td><div class=blue style='height:" 
+                        + grid_height 
+                        + "px; width:" 
+                        + grid_width 
+                        + "px;'></div></td>";
             }
             html_string += "</tr>"
         }
@@ -50,11 +54,13 @@ $(document).ready(function() {
 
 
 
-//html_string +=                                   "<td><div class=blue height=" + grid_height +"px width=" + grid_width + "px></div></td>";
+//html_string +=                                   "<td><div class=blue style='height=" + grid_height +"px, width=" + grid_width + "px'></div></td>";
 /*
     var grid_height = $wrapper.height()/counter;
     var grid_width = $wrapper.width()/counter;
     $box.css('height',grid_height);
     $box.css('width', grid_width);
+    
+    html_string +=                                   "<td><div class=blue></div></td>";
 
 */
