@@ -53,6 +53,13 @@ $(document).ready(function() {
 });
 
 
+/*
+    I CAN MAKE THIS EVEN BETTER!
+        -SET THE OVERALL GRID WIDTH RELATIVE TO WINDOW SIZE
+        -CREATE THE PROMPT THE WAY THE PROJECT ASKS EXACTLY
+        -ADD THE "OPTIONAL" PORTION CHANGING THE GRID COLORS BY 10%             ON EACH PASS.
+        -CLEAN.UP.THE.CODE.
+*/
 
 //html_string +=                                   "<td><div class=blue style='height=" + grid_height +"px, width=" + grid_width + "px'></div></td>";
 /*
